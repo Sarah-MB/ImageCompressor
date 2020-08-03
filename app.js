@@ -22,7 +22,7 @@ app.use(bodyparser.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public/uploads')));
-
+console.log('I am here');
 
 //MULTER 
 const storage = multer.diskStorage({
